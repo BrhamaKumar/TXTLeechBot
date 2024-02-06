@@ -108,11 +108,11 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="https://t.me/neetumamvol1",
+                url="https://t.me/Contactpkbot",
             ),
             InlineKeyboardButton(
                 text="Repo",
-                url="https://xnxx.com/",
+                url="https://google.com/",
             ),
         ],
     ]
@@ -122,7 +122,7 @@ keyboard = InlineKeyboardMarkup(
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
 
- editable = await m.reply_text("**Hello** 🤗 Wellcome To Text to Video Convert Bot🤖 \n\n**Bot Made By ⭐ MR.SATYAM** ⭐\n\n**Txt to video Command** = /txt")
+ editable = await m.reply_text("**Hello** 🤗 Wellcome To Text to Video Convert Bot🤖 \n\n**Bot Made By ⭐ Brhama Kumar** ⭐\n\n**Txt to video Command** = /txt")
 
 
 @bot.on_message(filters.command(["stop"]))
@@ -144,11 +144,11 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**Please Buy This Bot**\n\n**Owner ➤ @MRSATYAM01**", quote=True)
+        await m.reply("**Please Buy This Bot**\n\n**Owner ➤ @Contactpkbot**", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : ⭐ **MR.SATYAM** ⭐**\n\nSend **TXT** File")
+            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : ⭐ **Brhama Kumar** ⭐**\n\nSend **TXT** File")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -399,10 +399,10 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}\n\n**Bot Made By ➤** ⭐ **MR.SATYAM** ⭐`"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}\n\n**Bot Made By ➤** ⭐ **Brhama Kumar** ⭐`"
                 prog = await m.reply_text(Show)
-                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
-                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
+                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ Brhama Kumar** ⭐\n**@funnyzilla**"
+                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ Brhama Kumar** ⭐\n**@funnyzilla**"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -434,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
+                            f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ Brhama Kumar** ⭐\n**@funnyzilla**"
                         )
                         count += 1
                         # time.sleep(1)
@@ -802,7 +802,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done")
 
 
-@bot.on_message(filters.command(["sumit"]))
+@bot.on_message(filters.command(["brhama"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -921,7 +921,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- @neetumamvol1'
+            cc = f'**Title »** {name1}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- @funnyzilla'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
