@@ -12,7 +12,7 @@ from config import Config
 
 
 
-DATABASE_NAME = "cluster"
+DATABASE_NAME = "Cluster0"
 
 DATABASE_URI = Config.TECH_VJ_DATABASE_URL
 
