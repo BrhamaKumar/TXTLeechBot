@@ -13,9 +13,9 @@ import os
 from config import Config
 # the Strings used for this "thing"
 from translation import Translation
-from helper.utils import verify_user, check_token
+from utils import verify_user, check_token
 from pyrogram import filters, enums
-from helper.database.adduser import AddUser
+from database.adduser import AddUser
 from pyrogram import Client
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
