@@ -22,7 +22,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-@Client.on_message(filters.private & filters.command(["help"]))
+@Bot.on_message(filters.private & filters.command(["help"]))
 async def help_user(bot, update):
     # logger.info(update)
     await AddUser(bot, update)
@@ -36,7 +36,7 @@ async def help_user(bot, update):
     )
 
 
-@Client.on_message(filters.private & filters.command(["start"]))
+@Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     if Config.TECH_VJ_UPDATES_CHANNEL is not None:
         back = await handle_force_sub(bot, update)
