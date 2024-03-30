@@ -31,6 +31,11 @@ import logging
 from utils import verify_user, check_token, check_verification, get_token
 from config import Config
 #import pycurl
+import logging, requests, urllib.parse, os, time, shutil, asyncio, json, math
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logger = logging.getLogger(__name__)
+
 
 # bot = Client(
 #     "bot",
