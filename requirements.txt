@@ -13,4 +13,6 @@ humanize
 cryptg
 telethon
 python-decouple
-
+motor==3.1.2
+pytz==2023.3
+bs4
