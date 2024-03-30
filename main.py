@@ -28,7 +28,7 @@ import re
 import os
 import io
 import logging
-from helper.utils import verify_user, check_token, check_verification, get_token
+from utils import verify_user, check_token, check_verification, get_token
 #import pycurl
 
 # bot = Client(
