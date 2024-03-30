@@ -145,13 +145,13 @@ async def restart_handler(_, m):
 @bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
-    if not await check_verification(bot, Message.from_user.id) and Config.TECH_VJ == True:
+    if not await check_verification(bot, m.from_user.id) and Config.TECH_VJ == True:
         btn = [[
-            InlineKeyboardButton("👨‍💻 ᴠᴇʀɪғʏ", url=await get_token(bot, Message.from_user.id, f"https://telegram.me/{Config.TECH_VJ_BOT_USERNAME}?start="))
+            InlineKeyboardButton("👨‍💻 ᴠᴇʀɪғʏ", url=await get_token(bot, m.from_user.id, f"https://telegram.me/{Config.TECH_VJ_BOT_USERNAME}?start="))
             ],[
             InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ ᴀɴᴅ ᴠᴇʀɪғʏ 🔺", url=f"{Config.TECH_VJ_TUTORIAL}")
         ]]
-        await Message.reply_text(
+        await m.reply_text(
             text="<b>ᴅᴜᴇ ᴛᴏ ᴏᴠᴇʀʟᴏᴀᴅ ᴏɴ ʙᴏᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴠᴇʀɪғʏ ғɪʀsᴛ\nᴋɪɴᴅʟʏ ᴠᴇʀɪғʏ ғɪʀsᴛ\n\nɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇɴ ᴛᴀᴘ ᴏɴ ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ sᴇᴇ 60 sᴇᴄᴏɴᴅ ᴠɪᴅᴇᴏ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ᴠᴇʀɪғʏ</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
