@@ -198,7 +198,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
-    user = m.from_user.id if m.from_user is not None else None
+    
     if not await check_verification(bot, m.from_user.id) and Config.TECH_VJ == True:
         btn = [[
             InlineKeyboardButton("👨‍💻 ᴠᴇʀɪғʏ", url=await get_token(bot, m.from_user.id, f"https://telegram.me/{Config.TECH_VJ_BOT_USERNAME}?txt="))
@@ -211,7 +211,8 @@ async def account_login(bot: Client, m: Message):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return	
-        
+
+    user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
         await m.reply("**Please Buy This Bot**\n\n**Owner ➤ @Contactpkbot**", quote=True)
         return
