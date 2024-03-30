@@ -29,6 +29,7 @@ import os
 import io
 import logging
 from utils import verify_user, check_token, check_verification, get_token
+from config import Config
 #import pycurl
 
 # bot = Client(
