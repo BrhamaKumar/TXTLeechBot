@@ -201,7 +201,7 @@ async def account_login(bot: Client, m: Message):
     
     if not await check_verification(bot, m.from_user.id) and Config.TECH_VJ == True:
         btn = [[
-            InlineKeyboardButton("👨‍💻 ᴠᴇʀɪғʏ", url=await get_token(bot, m.from_user.id, f"https://telegram.me/{Config.TECH_VJ_BOT_USERNAME}?txt="))
+            InlineKeyboardButton("👨‍💻 ᴠᴇʀɪғʏ", url=await get_token(bot, m.from_user.id, f"https://telegram.me/{Config.TECH_VJ_BOT_USERNAME}?start="))
             ],[
             InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ ᴀɴᴅ ᴠᴇʀɪғʏ 🔺", url=f"{Config.TECH_VJ_TUTORIAL}")
         ]]
