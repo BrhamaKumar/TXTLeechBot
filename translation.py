@@ -6,9 +6,11 @@ class Translation(object):
     TECH_VJ_START_TEXT = """
 <b>ʜᴇʟʟᴏ {} 👋
 
-ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀᴅᴠᴀɴᴄᴇ Renamer Bot
-
-ɢɪᴠᴇ ᴍᴇ ᴀɴʏ File ɪ ᴡɪʟʟ Rename ɪɴᴛᴏ New 🆕 Name ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ sᴜᴘᴘᴏʀᴛ
+ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀᴅᴠᴀɴᴄᴇ Txt To Video Converter Bot
+First Contact @ContentmebkpBot or user id add karne ko bolo (free of cost)
+After Add user id Give /txt command in Bot
+Send txt File & Enjoy 😊
+ɢɪᴠᴇ ᴍᴇ ᴀɴʏ without drm txt file i will download & upload 
 
 ᴛʜɪs ʙᴏᴛ ɪs ᴘᴏᴡᴇʀᴇᴅ ʙʏ <a href="https://t.me/Contactpkbot">Brhama Kumar</a></b>
 """
