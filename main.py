@@ -1,6 +1,7 @@
 from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 import requests
 import json
+from os import environ
 import subprocess
 from pyrogram import Client, filters, enums
 from pyrogram.types.messages_and_media import message
